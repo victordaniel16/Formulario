@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+form {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+fieldset {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+legend{
+    font-size: 20px;
+    font-size: 500;
+    margin: 0 5px 0 5px;
+}
+
+.group label{
+    margin: 0 20px 20px 0;
+}
+
+.group input, select{
+    width: 300px;
+    margin: 0 20px 20px 0;
+}
+
+.group select{
+    width: 130px;
+    margin: 0 20px 20px 0;
+}
+
+#sexo{
+    margin-left: 10px;
+}
+
+#cidade{
+    margin-left: -5px;
+}
+
+.data-sexo{
+    display: inline-flex;
+}
+
+.data input{
+    width: 130px;
+    margin: 0 20px 20px 0;
+}
+
+.btn-salvar{
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#salvar{
+    width: 60px;
+    height: 30px;
+    background: #111826;
+    color: #fff;
+    border-radius: 5px;
+}

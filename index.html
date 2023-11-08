@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LOGIN</title>
+    <link rel="shortcut icon" href="assets/balloon-heart-fill.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-     <h1>Pagina de Contato</h1>
+    <h1>Cadastro de Usuário</h1>
     <form method="get" id="fContato" action="contato.php">
         <fieldset id="usuario">
             <legend> Identificação do Usuário</legend>
-        <p>
-            <label for="cNome"></label>Nome: <input type="text" name="tNome" id="cNome" maxlength="30" size="20" required="yes" autofocus="yes" placeholder="Nome Completo"></p>
+            <div class="group">
 
-        <p>
-        
-        <label for="cSenha">Senha:<input type="password" name="tSenha" id="cSenha" maxlength="8" size="8"
-         required="yes" placeholder="8 digitos"></label>
-        </p>
+                <div class="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required autofocus placeholder="Nome Completo">
+                </div>
 
-        <hr>
-        <p>
-            <label for="cMail">E-mail:<input type="email" name="tMail" id="cMal" maxlength="60" size="30"
-                placeholder="Digite o e-mail" required="yes">
-            </label>
-        </p>
-        <fieldset id="sexo"><legend>Sexo</legend>
-        <input type="redio" name="tSexo" id="cMasc" value="M" checked>
-        <label for="cMasc">Masculino</label>  <br>
+                <div class="senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required placeholder="Digite a sua senha">
+                </div>
+
+                <div class="email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o e-mail" required>
+                </div>
+
+                <div class="data-sexo">
+                    <div class="sexo">
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexp" id="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" name="data">
+                    </div>
+                </div>
+
+                <div class="cidade">
+                    <label for="cidade">Cidade:</label>
+                    <select name="cidade" id="cidade">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="NI">Nova Iguaçu</option>
+                        <option value="DC">Duque de Caxias</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="btn-salvar">
+                <button id="salvar">Salvar</button>
+            </div>
+
         </fieldset>
-        <fieldset id="sexo"><legend>Sexo</legend>
-            <input type="radio" name="tSexo" id="cFemi" value="F" checked>
-            <label for="cFemi">Feminino</label> <br>
-            </fieldset>
-        <p>
-            <label for="cNasc">Data de Nascimento:</label>
-            <input type="date" name="tNasc" pattern="\d{2}/\d{2}/\d{4}"
-            title=  "Mês/Dia/ano">
-        </p>
-        <p>
-            
-    <label for="cCid">Cidade
-        <select name="tCid" id="cCid"></select>
-        <optgroup label="Cidade">
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="NI">Nova Iguaçu</option>
-            <option value="DC">Duque de Caxias</option>
-        </optgroup>
-    </label>
-    </fieldset>
     </form>
 </body>
+
 </html>
