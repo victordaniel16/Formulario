@@ -10,41 +10,43 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: #E5E5E5;
+    background: #664986;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     height: 50px;
     font-size: 30px;
     font-weight: 700;
+    margin-top: 10px ;
+    color: #fff;
 }
-
 form {
-    width: 100vw;
-    height: 80vh;
+    width: 90vw;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 10px;
+    margin: 10px;
+    background: #E5E5E5;
 }
-
-fieldset {
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-legend{
+form h1{
+    width: 300px;
+    height: 30px;
     font-size: 20px;
     font-size: 500;
-    margin: 0 5px 0 5px;
+    color:  #664986;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.group{
+    margin: 30px;
 }
 
 .group label{
@@ -54,11 +56,23 @@ legend{
 .group input, select{
     width: 300px;
     margin: 0 20px 20px 0;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
 }
+
 
 .group select{
     width: 130px;
     margin: 0 20px 20px 0;
+}
+
+input:focus{
+    border-color: #664986;
+}
+
+select:focus{
+    border-color: #664986;
 }
 
 #sexo{
@@ -83,12 +97,23 @@ legend{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #salvar{
-    width: 60px;
+    width: 150px;
     height: 30px;
-    background: #111826;
+    background: #664986;
     color: #fff;
     border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+#salvar:hover{
+    transition: background 1s;
+    background: #111826;
+
 }
